@@ -3,22 +3,25 @@ import tkinter as tk
 def mostrar_nombre():
     texto = entrada.get()
     if texto == "":
-        etiqueta2["text"] = "Introduce un nombre"
+        # etiqueta2["text"] = "Introduce un nombre"
+        etiqueta2.config(text="Introduce un nombre")
     else:
-        etiqueta2["text"] = f"Bienvenido {texto}"
+        # etiqueta2["text"] = f"Bienvenido {texto}"
+        etiqueta2.config(text=f"Bienvenido {texto}")
     
 # Crear la ventana principal
 ventana = tk.Tk()
 
 # Configurar título y tamaño
 ventana.title("Mi Primera App")
-ventana.geometry("400x300")
+ventana.geometry("500x400")
 
 etiqueta = tk.Label(ventana, text="Introduce tu nombre")
 etiqueta.config(font=("Arial", 16), fg="blue")
 etiqueta.pack(pady=10)
 
 entrada = tk.Entry(ventana)
+entrada.config(width="50")
 entrada.pack(pady=10)
 
 boton = tk.Button(ventana, text="Enviar", command=mostrar_nombre)
