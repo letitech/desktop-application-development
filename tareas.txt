@@ -1,2 +1,3 @@
 Completar proyecto - Alta - En proceso
 Crear calculadora - Alta - Pendiente
+Base de datos - Media - Pendiente
